@@ -53,7 +53,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
                 null
                 :
                 <NumberEasing
-                  value={this.props.loc / 64}
+                  value={Math.ceil(this.props.loc / 64)}
                   speed={300}
                   ease='quintInOut'
                 />
